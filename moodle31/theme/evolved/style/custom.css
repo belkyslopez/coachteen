@@ -1,0 +1,12 @@
+/* Custom CSS Settings
+-------------------------*/
+.logosmall {
+    background: url([[setting:logosmall]]) no-repeat;
+    display: block;
+    float:right;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+[[setting:customcss]]

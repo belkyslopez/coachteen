@@ -1,0 +1,98 @@
+/* LAYOUT
+-------------------------------------------------------------- */
+@import "lib.less";
+@import "layout/page_header.less";
+@import "layout/page_footer.less";
+@import "layout/custommenu.less";
+@import "layout/buttons.less";
+@import "modules/block.less";
+@import "modules/forum.less";
+@import "modules/assignment.less";
+@import "modules/calendar.less";
+@import "modules/quiz.less";
+@import "modules/login.less";
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html, 
+body {
+  font-family: 'OpenSans';
+  color: @main_text_color; 
+  background: @background_color;
+  height: 100%;
+}
+
+a{
+  color: #0088CC;
+	&:link, &:visited{
+		color: #0088CC;
+	}
+	&:hover{
+		text-decoration:underline;
+	}
+}
+h3.page-subtitle{
+    margin: 10px 0px 10px 10px;
+}
+
+span.error{
+    color:red;
+}
+
+input[type=text], 
+input[type=password], 
+textarea{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+table{
+	tr{
+    border: 1px solid #efefef;
+    padding: 5px;
+	}
+	tr:nth-child(odd) td{
+    background-color: @box_color;
+	}
+	tr:nth-child(even) td{
+    background-color: white; 
+	}	
+} 
+
+#page-content{
+  min-height:500px;
+  min-width: 0px;
+}
+
+.page-content{
+  &.report-page{
+    overflow-x:hidden;
+    margin-top: 20px;
+  }
+}
+.report-page{
+  .main-report-content{
+    width:75%;
+    float:right;
+    margin-bottom: 20px;
+    &.initial-left-region-hidden{
+      width: 100%;
+    }
+  }
+  #report-region-pre{
+    width:23%;
+    float:left;
+    max-width:200px;
+    &.initial-hidden-region{
+      margin-left: -220px;
+    }
+  }
+}
+
+/* ADMIN
+-------------------------------------------------------------- */
+#admindeviceselector img{
+  width:100%;
+}
